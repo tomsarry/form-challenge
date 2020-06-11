@@ -1,0 +1,91 @@
+/* global styles */
+
+:root {
+    --main-color: rgb(134, 38, 38);
+    --bg-color: rgb(39, 41, 53);
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+
+/* layout */
+
+html {
+    background: var(--bg-color);
+    color: var(--main-color);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    border: 2px dashed white;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+.form-div {
+    border: 2px solid white;
+}
+
+.footer {
+    border: 2px solid white;
+}
+
+.personnal-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* components */
+
+.header-div {
+    margin: auto;
+    text-align: center;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    
+}
+
+
+
+@supports (-webkit-text-stroke: 2px black) {
+    .header-title {
+      -webkit-text-stroke: 2px white;
+      -webkit-text-fill-color: var(--main-color);
+    }
+  }
+
+  .form-div, .personnal-div {
+    width: 80%;
+    max-width: 600px;
+    
+  }
+
+
+  .form-perso {
+      height: 3rem;
+      line-height: 3rem;
+      border: 1px solid white;
+      margin: 1rem;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1.5rem;
+      font-family: inherit;    
+  }

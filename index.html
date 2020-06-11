@@ -2,24 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form design</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
 <body>
     <header>
-
+        <div class="header-div">
+            <h1 id="title" class="header-title">Help us improve ourselves !</h1>
+            <p id="description" class="header-desc">Please fill the detail bellow.</p>
+        </div>
     </header>
-    <main>
 
+    <main class="container">
+        
+        <div class="form-div">
+            <form id="survey-form" class="form">
+                <div class="personnal-div">
+                    <label>Name:</label>
+                    <input id="name" class="form-perso" placeholder="Name" required>
+                    <label>Email:</label>
+                    <input id="email" class="form-perso" placeholder="E-mail adress" required>
+                    <label>Age:</label>
+                    <input id="number" class="form-perso" placeholder="Age">
+
+
+                </div>
+
+                <div class="other-div">
+                    <textarea placeholder="Enter any additional comments here.">
+
+                    </textarea>
+
+                    <button id="submit" class="btn-submit" type="submit">this button submits the form</button>
+                </div>
+
+            </form>
+
+
+
+           
+        </div> 
     </main>
     <footer>
 
     </footer>
 
-    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script> 
 </body>
 
 
