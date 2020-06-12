@@ -22,24 +22,62 @@
     <main class="container">
         
         <div class="form-div">
+            <h2 class="perso-title">Help us get to know you a little bit more.</h2>
             <form id="survey-form" class="form">
                 <div class="personnal-div">
-                    <label>Name:</label>
+                    <label class="input-label" for="name">Name:</label>
                     <input id="name" class="form-perso" placeholder="Name" required>
-                    <label>Email:</label>
+                    <label class="input-label" for="email">Email:</label>
                     <input id="email" class="form-perso" placeholder="E-mail adress" required>
-                    <label>Age:</label>
+                    <label class="input-label" for="number">Age:</label>
                     <input id="number" class="form-perso" placeholder="Age">
+                    
+                    <div class="div-sex">
+                        <input class="radio" type="radio" name="sex" id="male" value="male">
+                        <label class="radio-label" for="male">Male</label>
 
+                        <input class="radio" type="radio" name="sex" id="female" value="female">
+                        <label class="radio-label" for="female">Female</label>
 
+                        <input class="radio" type="radio" name="sex" id="other" value="other">
+                        <label class="radio-label" for="Other">Other</label>
+                    </div>
                 </div>
 
                 <div class="other-div">
+                    <div class="div-interests">
+                        <div class="row-interests">
+                            <input type="checkbox" name="interest" id="front-end" value="front-end" class="checkbox">
+                            <label for="front-end" class="checkbox-label">Front End</label>
+                        </div>
+
+                        <div class="row-interests">
+                            <input type="checkbox" name="interest" id="back-end" value="back-end" class="checkbox">
+                            <label for="back-end" class="checkbox-label">Back End</label>
+                        </div>
+
+                        <div class="row-interests">
+                            <input type="checkbox" name="interest" id="algorithms" value="algorithms" class="checkbox">
+                            <label for="algorithms" class="checkbox-label">Algorithms</label>
+                        </div>                    
+
+                        <div class="row-interests">
+                            <input type="checkbox" name="interest" id="data-structures" value="data-structures" class="checkbox">
+                            <label for="data-structures" class="checkbox-label">Data Structures</label>
+                        </div>
+
+                        <div class="row-interests">
+                            <input type="checkbox" name="interest" id="mobile-dev" value="mobile-dev" class="checkbox">
+                            <label for="mobile-dev" class="checkbox-label">Mobile Developping</label>
+                        </div>
+                    </div>
+
                     <textarea placeholder="Enter any additional comments here.">
 
                     </textarea>
 
-                    <button id="submit" class="btn-submit" type="submit">this button submits the form</button>
+                    <button id="submit" class="btn-submit" type="submit">Submit</button>
+                    
                 </div>
 
             </form>
