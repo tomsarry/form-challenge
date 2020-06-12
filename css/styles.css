@@ -28,24 +28,58 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    border: 2px dashed white;
-    padding: 1rem;
-    margin: 3rem;
+    /* border: 2px dashed white; */
+    /* padding: 1rem; */
+    /* margin: 3rem; */
 }
 
 .form-div {
-    border: 2px solid white;
-}
-
-.footer {
-    border: 2px solid white;
-}
-
-.personnal-div {
+    background: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 2px solid white; */
+    margin-top: 1rem;
+    padding: 3rem;
+    width: 500px;
+}
+
+.footer {
+    /* border: 2px solid white; */
+}
+.personnal-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
     margin: auto;
+    background: beige;
+}
+
+.form {
+    margin-top: 1rem;
+    width: 500px;
+}
+
+.div-interests {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.other-div {
+    max-width: 100%;
+    min-width: 100%;
+    margin: auto;
+}
+
+.row-interests {
+    margin: 0.2rem;
+}
+
+.text-div {
+    max-width: 500px;
 }
 
 
@@ -60,7 +94,21 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem;
-    
+}
+
+.form-title {
+    font-style: italic;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.div-sex {
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -73,7 +121,7 @@ body {
   }
 
   .form-div, .personnal-div {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     
   }
@@ -83,9 +131,46 @@ body {
       height: 3rem;
       line-height: 3rem;
       border: 1px solid white;
-      margin: 1rem;
-      width: 80%;
-      max-width: 400px;
+      margin: 0.7rem 0rem;
+      max-width: 100%;
+      /* max-width: 400px; */
       font-size: 1.5rem;
       font-family: inherit;    
+  }
+
+  .input-label {
+      align-self: flex-start;
+  }
+
+  .radio {
+      margin-right: 5px; 
+  }
+
+  .radio-label {
+      margin-right: 10px;
+  }
+
+  .text-area {
+      width: 100%;
+      /* lock the width of the text area */
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 7rem;
+      max-height: 15rem;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      font-size: 1.3rem;
+
+  }
+
+  .btn-submit {
+      width: 100%;
+      background-color: darkgrey;
+      color: black;
+      border: 0px;
+      font-size: 2rem;
+      height: 3rem;
+      margin: 2rem 0rem;
+      line-height: 3rem;
   }
