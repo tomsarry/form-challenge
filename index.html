@@ -22,7 +22,7 @@
     <main class="container">
         
         <div class="form-div">
-            <h2 class="perso-title">Help us get to know you a little bit more.</h2>
+            <h2 class="form-title">Help us get to know you a little bit more.</h2>
             <form id="survey-form" class="form">
                 <div class="personnal-div">
                     <label class="input-label" for="name">Name:</label>
@@ -30,7 +30,7 @@
                     <label class="input-label" for="email">Email:</label>
                     <input id="email" class="form-perso" placeholder="E-mail adress" required>
                     <label class="input-label" for="number">Age:</label>
-                    <input id="number" class="form-perso" placeholder="Age">
+                    <input id="number" class="form-perso" placeholder="Age" type="number" min="5" max="130">
                     
                     <div class="div-sex">
                         <input class="radio" type="radio" name="sex" id="male" value="male">
@@ -44,6 +44,7 @@
                     </div>
                 </div>
 
+                <h2 class="form-title">Any particular interest ?</h2>
                 <div class="other-div">
                     <div class="div-interests">
                         <div class="row-interests">
@@ -72,9 +73,14 @@
                         </div>
                     </div>
 
-                    <textarea placeholder="Enter any additional comments here.">
+                    <h2 class="form-title">Would you like to add anything else ?</h2>
 
-                    </textarea>
+                    <div class="text-div">
+                         <textarea id="text-area" class="text-area" nmaxlength="1024" name="text-area" placeholder="Enter any additional comments here.">
+
+                        </textarea>
+
+                     </div>
 
                     <button id="submit" class="btn-submit" type="submit">Submit</button>
                     
