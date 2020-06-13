@@ -1,25 +1,28 @@
 /* global styles */
 
 :root {
-    --main-color: rgb(134, 38, 38);
-    --bg-color: rgb(39, 41, 53);
+    --main-color: #5b7b7a;
+    --sec-color: #415857;
+    --bg-color: #d8d8d8;
 
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    animation: 300ms;
 }
 
 
 /* layout */
 
 html {
-    background: var(--bg-color);
+    background: var(--sec-color);
     color: var(--main-color);
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     height: 100%;
-    /* width: 100%; */
+    margin: 0px;
 }
 
 .container {
@@ -34,18 +37,28 @@ body {
 }
 
 .form-div {
-    background: beige;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid white; */
+    box-shadow: 10px 10px 0px 0px black;
+    border-radius: 10px;
     margin-top: 1rem;
     padding: 3rem;
     width: 500px;
 }
 
-.footer {
-    /* border: 2px solid white; */
+
+footer {
+        
+    height: 12rem; 
+    background: black;
+    color: white;
+    font-size: 1rem;   
+    line-height: 2rem;
+    width: 1000%;
+    text-align: center;
+    margin-top: 3rem;
 }
 .personnal-div {
     display: flex;
@@ -53,7 +66,6 @@ body {
     justify-content: center;
     width: 500px;
     margin: auto;
-    background: beige;
 }
 
 .form {
@@ -88,6 +100,8 @@ body {
 .header-div {
     margin: auto;
     text-align: center;
+    background: black;
+    width: 100%;
 }
 
 .header-title {
@@ -100,25 +114,16 @@ body {
     font-style: italic;
     text-align: center;
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 
 .div-sex {
+    margin-top: 3px;
     width: 100%;
-    margin: 1rem;
     display: flex;
     justify-content: center;
 }
-
-
-
-@supports (-webkit-text-stroke: 2px black) {
-    .header-title {
-      -webkit-text-stroke: 2px white;
-      -webkit-text-fill-color: var(--main-color);
-    }
-  }
 
   .form-div, .personnal-div {
     width: 100%;
@@ -130,13 +135,27 @@ body {
   .form-perso {
       height: 3rem;
       line-height: 3rem;
-      border: 1px solid white;
       margin: 0.7rem 0rem;
+      box-sizing: border-box;
+      padding: 10px;
       max-width: 100%;
-      /* max-width: 400px; */
       font-size: 1.5rem;
-      font-family: inherit;    
+      border: none;
+      border-radius: 10px;
+      font-family: inherit;
+      background: var(--main-color);
+      box-shadow: 5px 5px 0px 0px black;
+      color: white;
+
   }
+
+  .form-perso:hover,
+  .form-perso:active,
+  .form-perso:focus {
+      box-shadow: 7px 7px 0px 0px black;
+      animation-duration: 2s;
+  }
+
 
   .input-label {
       align-self: flex-start;
@@ -148,6 +167,7 @@ body {
 
   .radio-label {
       margin-right: 10px;
+      color: black;
   }
 
   .text-area {
@@ -157,20 +177,53 @@ body {
       max-width: 100%;
       min-height: 7rem;
       max-height: 15rem;
-      padding: 0px;
+      padding: 10px;
       margin: 0px;
-      border: 0px;
+      box-sizing: border-box;
+      border: none;
+      box-shadow: 5px 5px 0 0 black;
+      background: var(--main-color);
+      border-radius: 10px;
       font-size: 1.3rem;
+      font-family: inherit;
+  }
 
+  .text-area:hover,
+  .text-area:active,
+  .text-area:focus {
+    box-shadow: 7px 7px 0 0 black;
   }
 
   .btn-submit {
       width: 100%;
-      background-color: darkgrey;
+      background-color: var(--main-color);
+      border-radius: 10px;
+      box-shadow: none;
       color: black;
-      border: 0px;
       font-size: 2rem;
       height: 3rem;
+      border: none;
       margin: 2rem 0rem;
       line-height: 3rem;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 5px 5px 0 0 black;
   }
+
+  .btn-submit:hover {
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+  .checkbox-label {
+      color: black;
+  }
+
+
+
+
+hr {
+    margin: 2rem;  
+    border: 0px; 
+    height: 2px;
+    background-color: black;
+}

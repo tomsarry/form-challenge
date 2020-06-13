@@ -28,7 +28,7 @@
                     <label class="input-label" for="name">Name:</label>
                     <input id="name" class="form-perso" placeholder="Name" required>
                     <label class="input-label" for="email">Email:</label>
-                    <input id="email" class="form-perso" placeholder="E-mail adress" required>
+                    <input id="email" type="email" pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}" class="form-perso" placeholder="E-mail adress" required>
                     <label class="input-label" for="number">Age:</label>
                     <input id="number" class="form-perso" placeholder="Age" type="number" min="5" max="130">
                     
@@ -43,6 +43,8 @@
                         <label class="radio-label" for="Other">Other</label>
                     </div>
                 </div>
+
+                <hr>
 
                 <h2 class="form-title">Any particular interest ?</h2>
                 <div class="other-div">
@@ -73,7 +75,9 @@
                         </div>
                     </div>
 
-                    <h2 class="form-title">Would you like to add anything else ?</h2>
+                    <hr>
+
+                    <h2 class="form-title">Want to add anything else ?</h2>
 
                     <div class="text-div">
                          <textarea id="text-area" class="text-area" nmaxlength="1024" name="text-area" placeholder="Enter any additional comments here.">
@@ -92,10 +96,9 @@
 
            
         </div> 
+        <footer>Copyright SARRY Tom / June 2020</footer>
     </main>
-    <footer>
-
-    </footer>
+    
 
     <script src="js/scripts.js" type="text/javascript"></script> 
 </body>
