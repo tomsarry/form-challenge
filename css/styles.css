@@ -151,21 +151,6 @@ footer {
       padding: 10px;
       max-width: 100%;
       font-size: 1.5rem;
-      border: none;
-      border-radius: 10px;
-      font-family: inherit;
-      background: var(--main-color);
-      box-shadow: 5px 5px 0px 0px var(--sec-color);
-      color: white;
-      transition: box-shadow 0.2s ease-in-out;
-
-  }
-
-  .form-perso:hover,
-  .form-perso:active,
-  .form-perso:focus {
-      box-shadow: 7px 7px 0px 0px var(--sec-color);
-      
   }
 
 
@@ -193,43 +178,19 @@ footer {
       padding: 10px;
       margin: 0px;
       box-sizing: border-box;
-      color: white;
-      border: none;
-      box-shadow: 5px 5px 0 0 var(--sec-color);
-      background: var(--main-color);
       border-radius: 10px;
       font-size: 1.3rem;
-      font-family: inherit;
-      transition: box-shadow 0.2s ease-in-out;
   }
 
-  .text-area:hover,
-  .text-area:active,
-  .text-area:focus {
-    box-shadow: 7px 7px 0 0 var(--sec-color);
-  }
 
   .btn-submit {
-      width: 100%;
-      background-color: var(--main-color);
-      border-radius: 10px;
-      box-shadow: none;
-      color: white;
+      width: 100%;    
       font-size: 1.7rem;
       height: 3rem;
-      text-transform: uppercase;
-      border: none;
+      text-transform: uppercase;    
       margin: 2rem 0rem;
-      line-height: 3rem;
-      font-family: inherit;
-      cursor: pointer;
-      box-shadow: 5px 5px 0 0 var(--sec-color);
-      transition: box-shadow 0.2s ease-in-out;
+      line-height: 3rem;   
   }
-
-  .btn-submit:hover {
-    box-shadow: 8px 8px 0px 0px var(--sec-color);
-}
 
   .checkbox-label {
       color: black;
@@ -251,4 +212,21 @@ a {
 
 a:hover {
     opacity: 0.7;
+}
+
+.perspective {
+    box-shadow: 5px 5px 0px 0px var(--sec-color);
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+}
+
+.perspective:hover,
+.perspective:focus,
+.form-perso:active {
+    box-shadow: 7px 7px 0px 0px var(--sec-color);
 }
