@@ -134,6 +134,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
   .form-div, .personnal-div {
@@ -192,10 +193,42 @@ footer {
       line-height: 3rem;   
   }
 
-  .checkbox-label {
-      color: black;
-      font-size: 1.5rem;
-  }
+.checkbox-label {
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.dropdown-label {
+    font-size: 1rem;
+    color: black;
+    margin: 2px 0px 0px 5px;
+}
+
+.dropdown-data-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown {
+    display: none;
+    height: 0px;
+    /* opacity: 1; */
+    /* transition: display 1s, height 1s, opacity 1s ease; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.row-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-title {
+    align-self: flex-start;
+}
 
 hr {
     margin: 2rem;  
