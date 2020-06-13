@@ -7,7 +7,6 @@
 
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    animation: 300ms;
 }
 
 
@@ -43,6 +42,7 @@ body {
     margin-top: 1rem;
     padding: 3rem;
     width: 500px;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .form-div:hover {
@@ -157,6 +157,7 @@ footer {
       background: var(--main-color);
       box-shadow: 5px 5px 0px 0px var(--sec-color);
       color: white;
+      transition: box-shadow 0.2s ease-in-out;
 
   }
 
@@ -164,7 +165,7 @@ footer {
   .form-perso:active,
   .form-perso:focus {
       box-shadow: 7px 7px 0px 0px var(--sec-color);
-      animation-duration: 2s;
+      
   }
 
 
@@ -199,6 +200,7 @@ footer {
       border-radius: 10px;
       font-size: 1.3rem;
       font-family: inherit;
+      transition: box-shadow 0.2s ease-in-out;
   }
 
   .text-area:hover,
@@ -222,6 +224,7 @@ footer {
       font-family: inherit;
       cursor: pointer;
       box-shadow: 5px 5px 0 0 var(--sec-color);
+      transition: box-shadow 0.2s ease-in-out;
   }
 
   .btn-submit:hover {
@@ -232,9 +235,6 @@ footer {
       color: black;
       font-size: 1.5rem;
   }
-
-
-
 
 hr {
     margin: 2rem;  
