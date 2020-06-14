@@ -86,6 +86,10 @@ footer {
     margin: auto;
 }
 
+.location {
+    margin: 10px 0px 0px 0px;
+}
+
 .row-interests {
     margin: 0.2rem;
     display: flex;
@@ -199,19 +203,19 @@ footer {
     margin-left: 5px;
 }
 
-.dropdown-label {
+.data-label {
     font-size: 1rem;
     color: black;
     margin: 2px 0px 0px 5px;
 }
 
-.dropdown-data-structure {
+.data-data-structure {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.dropdown {
+.data {
     display: none;
     height: 0px;
     /* opacity: 1; */
@@ -221,12 +225,12 @@ footer {
 }
 
 
-.row-dropdown {
+.row-data {
     display: flex;
     align-items: center;
 }
 
-.dropdown-title {
+.data-title {
     align-self: flex-start;
 }
 
@@ -235,6 +239,10 @@ hr {
     border: 0px; 
     height: 2px;
     background-color: black;
+}
+
+label {
+    color: black;
 }
 
 a {

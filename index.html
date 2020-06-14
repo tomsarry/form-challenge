@@ -44,6 +44,17 @@
                         <input class="radio" type="radio" name="sex" id="other" value="other">
                         <label class="radio-label" for="Other">Other</label>
                     </div>
+
+                    <div class="location">
+                        <label for="dropdown">Tell us where you are from : </label>
+                        <select name="dropdown" id="dropdown">
+                            <option value="europe">Europe</option>
+                            <option value="america">America</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
                 </div>
 
                 <hr>
@@ -68,26 +79,26 @@
 
                         <div class="row-interests div-interests">
                             
-                            <div class="row-dropdown">
+                            <div class="row-data">
                                 <input type="checkbox" name="interest" id="data-structures" value="data-structures" class="checkbox">
-                                <label for="data-structures" class="checkbox-label dropdown-title">Data Structures</label>
+                                <label for="data-structures" class="checkbox-label data-title">Data Structures</label>
                             </div>
                             
                             
-                            <div class="dropdown" id="dropdown">
-                                <div class="row-dropdown">
-                                    <input type="checkbox" name="type-data-structure" id="array" value="array" class="dropdown-checkbox">
-                                    <label for="array" class="dropdown-label">Array</label>
+                            <div class="data" id="data">
+                                <div class="row-data">
+                                    <input type="checkbox" name="type-data-structure" id="array" value="array" class="data-checkbox">
+                                    <label for="array" class="data-label">Array</label>
                                 </div>
                                 
-                                <div class="row-dropdown">
-                                    <input type="checkbox" name="type-data-structure" id="tree" value="tree" class="dropdown-checkbox">
-                                    <label for="tree" class="dropdown-label">Tree</label>
+                                <div class="row-data">
+                                    <input type="checkbox" name="type-data-structure" id="tree" value="tree" class="data-checkbox">
+                                    <label for="tree" class="data-label">Tree</label>
                                 </div>
 
-                                <div class="row-dropdown">
-                                    <input type="checkbox" name="type-data-structure" id="hashmap" value="hashmap" class="dropdown-checkbox">
-                                    <label for="hashmap" class="dropdown-label">Hash Map</label>
+                                <div class="row-data">
+                                    <input type="checkbox" name="type-data-structure" id="hashmap" value="hashmap" class="data-checkbox">
+                                    <label for="hashmap" class="data-label">Hash Map</label>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +133,7 @@
     
 
     <script src="js/scripts.js" type="text/javascript"></script> 
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 
